@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href='https://unpkg.com/boxicons@latest/css/boxicons.min.css' rel='stylesheet'>
+
+  
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body{
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+     background-image: url(images/favicon-32x32.png) repeat;
+     background-color:hsl(30, 38%, 92%) ;
+     
+    }
+   /* main{
+       height: 80vh;
+       width:95vh ;
+       background-color:  hsl(30, 38%, 92%);
+       display: flex;
+      align-items: center;
+      justify-content: center;
+     
+    }*/
+    .container{
+      height: 50vh;
+      width: 76vh;
+      display: flex;
+      /*border: 1px solid black;*/
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 
+                0 20px 40px rgba(0, 0, 0, 0.1), 
+                0 30px 60px rgba(0, 0, 0, 0.1);      
+                border-radius: 10%;
+                background-color:#fff;
+    }
+    img{
+      height:100%;
+      width: ;
+      border-radius: 10% 0 0 10% ;
+    }
+    button{
+      background-color: hsl(158, 36%, 37%);
+      border-color: hsl(158, 36%, 37%);
+      border-radius: 10px;
+      color: #fff;
+      height: 9vh;
+      width: 25vh;
+      margin: 3px 5px 6px 39px;
+      
+    }
+    button:hover{
+opacity: 0.9;
+    }
+    .price{
+       font-size: 35px;
+      font-weight: bold;
+    color:hsl(158, 36%, 37%);
+    margin-right: 15px;
+    }
+    .price3{
+      font-size: 35px;
+      white-space: 1px;
+    
+      padding-top: 0;
+    }
+    .price4{
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-size: 20px;
+    }
+  @media (max-width:700px) {
+    .container{
+      font-size: 10px;
+      height: 85vh;
+      width: 66vh;
+      flex-direction: column;
+      border-radius: 0;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+    img{
+      height: 38vh;
+      width: 100%;    
+      object-fit: cover;  
+      border-radius: 0;
+    }
+    p{
+      width: 45vh;
+      margin-left: 90px;
+    }
+  }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="container">
+      <div class="firsr-child">
+         <img src="images/image-product-desktop.jpg" alt="">
+      </div>
+      <div class="second-child">
+         <p>
+         <span style="color: gray;" class="price4"> P E R F U M E</span> <br>
+    
+         <strong class="price3"> Gabrielle Essence Eau De Parfum</strong> <br>
+        
+         <span style="color: gray;"> A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+          Perfumer-Creator for the House of CHANEL.
+        </span> <br>
+         <span class="price">$149.99</span> 
+         <s class="price2" style="color: gray;">$169.99</s> 
+          <button> <i class='bx bx-cart'></i>Add to Cart</button>
+         </p>
+      </div>
+    </div>
+    
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Aschalew Tesfaye</a>.
+    </div>
+
+    </main>
+   
+</body>
+</html>
